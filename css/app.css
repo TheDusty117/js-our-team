@@ -1,4 +1,25 @@
 body{
-  background-color: teal;
+  background-color: bisque;
   text-align: center;
+}
+
+.table-sect{
+  font-size: 32px;
+}
+
+.actual-members{
+  font-size: 32px;
+  i
+}
+
+img{
+  border-radius: 50%;
+  width: 200px;
+}
+
+.cardz {
+  padding: 20px;
+  background-color: teal;
+  border-bottom: 3px solid grey;
+  color: white;
 }

@@ -31,7 +31,7 @@ const teamMembers = [
     firstName: 'Scott',
     lastName: 'Estrada',
     role: 'Developer',
-    profileImg: 'scott-estrada-developer.jpg',
+    profileImg: './img/scott-estrada-developer.jpg',
   },
   {
     firstName: 'Barbara',
@@ -70,7 +70,7 @@ for (let i = 0; i < teamMembers.length; i++) {
 
 
   const tr = `
-  <tr>
+  <tr class="actual-members cardz">
     <td>${firstName}</td>
     <td>${lastName}</td>
     <td>${role}</td>
