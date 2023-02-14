@@ -1,6 +1,7 @@
 body{
   background-color: bisque;
   text-align: center;
+  background-image: url(../img/wood-bckgrnd.jpg);
 }
 
 .table-sect{
@@ -9,7 +10,6 @@ body{
 
 .actual-members{
   font-size: 32px;
-  i
 }
 
 img{
@@ -17,9 +17,10 @@ img{
   width: 200px;
 }
 
-.cardz {
-  padding: 20px;
-  background-color: teal;
-  border-bottom: 3px solid grey;
-  color: white;
+h2{
+  font-size: 40px;
+}
+
+h3{
+  font-size: 24px;
 }

@@ -70,12 +70,12 @@ for (let i = 0; i < teamMembers.length; i++) {
 
 
   const tr = `
-  <tr class="actual-members cardz">
-    <td>${firstName}</td>
-    <td>${lastName}</td>
-    <td>${role}</td>
-    <td><img src=${profileImg} alt=""></td>
-  </tr>
+  <div class="card col-3 actual-members cardz p-4 m-3 justify-content-between">
+    <h2>${firstName}</h2>
+    <h2>${lastName}</h2>
+    <h3>${role}</h3>
+    <div><img src=${profileImg} alt=""></div>
+  </div>
   `
   membersTableEl.innerHTML += tr
   
