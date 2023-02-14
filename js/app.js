@@ -45,6 +45,24 @@ const teamMembers = [
 // CICLARE CON (FOR ... IN) ARRAY DI OGETTI E STAMPARE IN CONSOLE = NOME, COGNOME, RUOLO E STRINGA FOTO
 
 for(let chiave in teamMembers) {
-  console.log(teamMembers[chiave])
+  console.log(teamMembers[chiave])  //stampo in console le stringhe da cui e' composto il singolo membro
+
+}
+
+//STAMPA NEL DOM SOTTO FORMA DI STRINGA TUTTO
+
+//ciclare per la lunghezza dell'array di teamMembers, la creazione della corrispettiva variabile per specifica del membro
+//quindi ciclo for Classico che crea varie const con l'info interna, quindi const firstname=currentmember.firstname nomino variabile firstname uguale a membrocorrente punto firstname.
+
+for (let i = 0; i < teamMembers.length; i++) {
+
+  const currentMember = teamMembers[i] //prendo ogni membro dell'array con le sue info interne per 6 volte ciclate
+  console.log(currentMember)
+
+  const firstName = currentMember.firstName //creo variabile, che equivale al membro corrente. suachiave interna
+  const lastName = currentMember.lastName
+  const role = currentMember.role
+  const profileImg = currentMember.profileImg
+  console.log(firstName, lastName, role, profileImg)
 
 }
