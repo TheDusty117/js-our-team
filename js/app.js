@@ -1,10 +1,10 @@
 //CREAZIONE ARRAY COMPOSTO DA OGETTI
 
 const member = {
-  firstName: '',
-  lastName: '',
-  role: '',
-  profileImg: '',
+  firstName: 'nome',
+  lastName: 'cognome',
+  role: 'ruolo',
+  profileImg: 'immagine',
 }
 
 const teamMembers = [
@@ -47,3 +47,10 @@ const teamMembers = [
   },
 
 ]
+
+// CICLARE CON (FOR ... IN) ARRAY DI OGETTI E STAMPARE IN CONSOLE = NOME, COGNOME, RUOLO E STRINGA FOTO
+
+for(let chiave in member) {
+  console.log(member[role])
+
+}
