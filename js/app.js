@@ -1,5 +1,5 @@
 //CREAZIONE ARRAY COMPOSTO DA OGETTI
-
+//creo array teamMembers array, che avra' a sua volta 6 ogetti interni con le varie specifiche
 
 const teamMembers = [
   
