@@ -65,4 +65,20 @@ for (let i = 0; i < teamMembers.length; i++) {
   const profileImg = currentMember.profileImg
   console.log(firstName, lastName, role, profileImg)
 
+  
 }
+
+//CREO VARIABILE PER PRENDERE LA TABLE BODY NEL DOM
+
+const membersTableEl = document.getElementById('team-members-table')
+console.log(membersTableEl)
+
+//CREARE CICLO FOR CHE PER OGNI ITERAZIONE CREI UN ELEMENTO DEL DOM CHE CONTENGA LE SPECIFICHE DEL MEMBRO DEL TEAM
+
+// const tr = `
+// <tr>
+//   <td>${firstName}</td>
+//   <td>${lastName}</td>
+//   <td>${role}</td>
+//   <td>${profileImg}</td>
+// </tr>`
