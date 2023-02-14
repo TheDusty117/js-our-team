@@ -54,6 +54,9 @@ for(let chiave in teamMembers) {
 //ciclare per la lunghezza dell'array di teamMembers, la creazione della corrispettiva variabile per specifica del membro
 //quindi ciclo for Classico che crea varie const con l'info interna, quindi const firstname=currentmember.firstname nomino variabile firstname uguale a membrocorrente punto firstname.
 
+const membersTableEl = document.getElementById('team-members-table')
+console.log(membersTableEl)
+
 for (let i = 0; i < teamMembers.length; i++) {
 
   const currentMember = teamMembers[i] //prendo ogni membro dell'array con le sue info interne per 6 volte ciclate
@@ -65,20 +68,39 @@ for (let i = 0; i < teamMembers.length; i++) {
   const profileImg = currentMember.profileImg
   console.log(firstName, lastName, role, profileImg)
 
+
+  const tr = `
+  <tr>
+    <td>${firstName}</td>
+    <td>${lastName}</td>
+    <td>${role}</td>
+    <td><img src=${profileImg} alt=""></td>
+  </tr>
+  `
+  membersTableEl.innerHTML += tr
   
 }
 
+
+
+
 //CREO VARIABILE PER PRENDERE LA TABLE BODY NEL DOM
 
-const membersTableEl = document.getElementById('team-members-table')
-console.log(membersTableEl)
+// const membersTableEl = document.getElementById('team-members-table')
+// console.log(membersTableEl)
 
 //CREARE CICLO FOR CHE PER OGNI ITERAZIONE CREI UN ELEMENTO DEL DOM CHE CONTENGA LE SPECIFICHE DEL MEMBRO DEL TEAM
 
-// const tr = `
-// <tr>
-//   <td>${firstName}</td>
-//   <td>${lastName}</td>
-//   <td>${role}</td>
-//   <td>${profileImg}</td>
-// </tr>`
+// for (let i = 0; i < teamMembers.length; i++){
+
+//   const currentMember = teamMembers[i]
+//   console.log(currentMember)
+
+//   const firstName = currentMember.firstName //creo variabile, che equivale al membro corrente. suachiave interna
+//   const lastName = currentMember.lastName
+//   const role = currentMember.role
+//   const profileImg = currentMember.profileImg
+//   cons
+
+// }
+
